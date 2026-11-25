@@ -1,0 +1,112 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #dceeff, #a9c9e8, #789fc7);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  color: #245a8d;
+  font-size: 26px;
+}
+
+.container p {
+  text-align: center;
+  color: #666;
+}
+
+.formulario {
+  display: flex;
+  gap: 8px;
+  margin: 25px 0;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #245a8d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #19466f;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+li span {
+  flex: 1;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.concluida {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.excluir {
+  background-color: #b83b3b;
+}
+
+.excluir:hover {
+  background-color: #962d2d;
+}
+
+.contador {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 20px;
+    padding: 18px;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+}
