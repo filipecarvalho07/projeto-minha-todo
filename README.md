@@ -66,6 +66,12 @@ VITE_PARSE_SERVER_URL=https://parseapi.back4app.com/
 npm run dev
 ```
 
+## Aplicação publicada
+
+Acesse a aplicação pelo link:
+
+https://projeto-minha-todo.vercel.app/
+
 ## Autor
 
 Filipe de Carvalho Laranjeira
