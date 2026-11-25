@@ -1,16 +1,71 @@
-# React + Vite
+# Minha Lista de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida com React e Vite para organizar tarefas do dia a dia, utilizando o Back4App para armazenar os dados.
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- JavaScript
+- Vite
+- CSS
+- Back4App
+- Parse SDK
+- Git e GitHub
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Adicionar novas tarefas.
+- Listar tarefas cadastradas.
+- Marcar tarefas como concluídas.
+- Salvar o estado das tarefas no banco de dados.
+- Excluir tarefas.
+- Manter os dados salvos mesmo após atualizar a página.
 
-## Expanding the ESLint configuration
+## Banco de dados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O projeto utiliza o Back4App, com uma classe chamada `Tarefa`.
+
+Campos utilizados:
+
+| Campo | Tipo |
+|---|---|
+| titulo | String |
+| concluida | Boolean |
+
+## Como executar o projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/filipecarvalho07/projeto-minha-todo.git
+```
+
+2. Entre na pasta:
+
+```bash
+cd projeto-minha-todo
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Crie um arquivo `.env` na raiz do projeto com as credenciais da sua aplicação Back4App:
+
+```env
+VITE_PARSE_APPLICATION_ID=seu_application_id
+VITE_PARSE_JAVASCRIPT_KEY=sua_javascript_key
+VITE_PARSE_SERVER_URL=https://parseapi.back4app.com/
+```
+
+5. Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+## Autor
+
+Filipe de Carvalho Laranjeira
